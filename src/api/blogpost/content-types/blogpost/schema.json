@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogposts",
+  "info": {
+    "singularName": "blogpost",
+    "pluralName": "blogposts",
+    "displayName": "Blogpost",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "blogposts"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "blogposts"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
