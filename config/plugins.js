@@ -32,7 +32,7 @@ module.exports = ({ env }) => ({
         secure: true,
       },
       settings: {
-        defaultFrom: "me@joelebukatobi.dev",
+        defaultFrom: "noreply@joelebukatobi.dev",
         defaultReplyTo: "me@joelebuekatobi.dev",
       },
     },
