@@ -20,7 +20,7 @@
     "pg-connection-string": "^2.5.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Joel Onwuanaku"
   },
   "strapi": {
     "uuid": "1faa6af5-773e-4230-902d-94d33570d200"
