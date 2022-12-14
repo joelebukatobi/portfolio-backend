@@ -1,33 +1,14 @@
 {
-  "name": "backend",
-  "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
-  "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
-  },
-  "dependencies": {
-    "@strapi/plugin-i18n": "^4.3.4",
-    "@strapi/plugin-users-permissions": "^4.3.4",
-    "@strapi/provider-email-nodemailer": "^4.3.4",
-    "@strapi/provider-upload-cloudinary": "^4.3.4",
-    "@strapi/strapi": "^4.3.4",
-    "better-sqlite3": "^7.6.2",
-    "pg": "^8.7.3",
-    "pg-connection-string": "^2.5.0"
-  },
-  "author": {
-    "name": "Joel Onwuanaku"
-  },
-  "strapi": {
-    "uuid": "1faa6af5-773e-4230-902d-94d33570d200"
-  },
-  "engines": {
-    "node": ">=12.x.x <=16.x.x",
-    "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.6.0",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "vite": "^3.0.0"
+    }
 }
